@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./assets/png/ava.png" type="image/x-icon">
+    <link rel="icon" href="./assets/png/ava.png" type="image/x-icon">
+    <title>Case Study of Project 2</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style media="screen">
+
+    #slider{
+    width:80%;
+    margin:0px auto;
+    max-width: 700px;
+    position:relative;
+    overflow:hidden;
+    border: 10px solid white;
+    box-shadow:2px 5px 10px rgba(0,0,0,0.4);;
+    }
+
+    .slide{
+    width:100%;
+    display:none;
+    animation-name:fade;
+    animation-duration:1s;
+
+    }
+    img{
+    width:100%;
+    }
+    @keyframes fade{
+    from{opacity:0.5;}
+    to{opacity:1;}
+    }
+
+    .controls{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:1.5em;
+    padding:15px 10px;
+    border-radius:5px;
+    background:white;
+    transition:0.3s;
+    }
+
+ 
+
+    .controls:active{
+    color:white;
+    }
+
+    #left-arrow{
+    left:10px;
+    }
+
+    #right-arrow{
+    right:10px;
+    }
+        #dots-con{
+
+    text-align:center;
+    }
+    .dot{
+    display:inline-block;
+    background:grey;
+    padding:8px;
+    border-radius:50%;
+    margin:10px 5px;
+    }
+
+    .active{
+    background:rgb(7, 67, 213);
+    }
+
+    @media (max-width:576px){
+    #slider{width:100%;
+    }
+
+    .controls{
+      font-size:1em;
+    }
+
+    #dots-con{
+      display:none;
+    }
+    }
+  </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/img_bg.png"
+              alt="My Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Saiyed Mohd Ahmad</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Project 2</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            This page contains the case study of the GUI Project which includes the Project Overview, Tools Used and the Github Link.
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="https://github.com/smxhmxd/GUI" class="btn btn--bg" target="_blank">Code Link</a>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+<!--Slider-->
+<div id="slider">
+
+  <div class="slide" style="background: white;">
+    <img src="./assets/jpeg/s0.png" >
+  </div>
+
+  <div class="slide" style="background: white;">
+    <img src="./assets/jpeg/s1.png" >
+  </div>
+
+  <div class="slide" style="background: white;">
+    <img src="./assets/jpeg/s2.png" >
+  </div>
+
+  <div class="slide" style="background: white;">
+    <img src="./assets/jpeg/s3.png" >
+  </div>
+
+  <div class="slide" style="background: white;">
+    <img src="./assets/jpeg/s4.png" >
+  </div>
+
+  <div class="slide" style="background: white;">
+    <img src="./assets/jpeg/s6.png" >
+  </div>
+
+  <div class="slide" style="background: white;">
+    <img src="./assets/jpeg/s7.png" >
+  </div>
+
+
+
+  <!--Controlling arrows-->
+  <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+</span>
+  <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+</span>
+</div>
+  <div id="dots-con">
+ <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span> <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+
+ </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                In an increasingly digital world, ensuring the security of user accounts is of utmost importance. Traditional alphanumeric passwords can be vulnerable to various forms of attacks and may not provide a seamless user experience. This project has a Graphical-Based User Authentication System that uses a combination of five images as an additional password with the alphanumeric password to enhance security while offering a user-friendly authentication process.
+              </p>
+              <p class="project-details__desc-para">
+                The Graphical-Based User Authentication System aims to revolutionize the way users secure their accounts by providing a visually intuitive and highly secure authentication method. By combining the strengths of graphical elements and multi-factor authentication, this system offers robust protection against common security threats while ensuring user convenience and satisfaction.
+              </p>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">JavaScript</div>
+                <div class="skills__skill">PHP</div>
+                <div class="skills__skill">MySQL</div>
+                <div class="skills__skill">GIT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-3">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/saiyed-mohd-ahmad-93b583203/">
+              <img
+                class="main-footer__icon"
+                src="./assets/png/linkedin-ico.png"
+                alt="icon"
+              />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/smxhmxd">
+              <img
+                class="main-footer__icon"
+                src="./assets/png/github-ico.png"
+                alt="icon"
+              />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://leetcode.com/sma280201">
+              <img
+                class="main-footer__icon"
+                src="./assets/png/lcb.png"
+                alt="icon"
+              />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://youtube.com/@smxhmxd">
+              <img
+                class="main-footer__icon"
+                src="./assets/png/yt-ico.png"
+                alt="icon"
+              />
+            </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Saiyed Mohd Ahmad</h4>
+            <p class="main-footer__short-desc">
+            A Fullstack Web Developer with interest in Problem Solving using Data Structures & Algorithms
+            </p>
+          </div>
+    
+       </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script type="text/javascript">
+      var slides = document.querySelectorAll(".slide");
+      var dots = document.querySelectorAll(".dot");
+      var index = 0;
+
+      function prevSlide(n){
+        index+=n;
+        console.log("prevSlide is called");
+        changeSlide();
+      }
+
+      function nextSlide(n){
+        index+=n;
+        changeSlide();
+      }
+
+      changeSlide();
+
+      function changeSlide(){
+
+        if(index>slides.length-1)
+          index=0;
+
+        if(index<0)
+          index=slides.length-1;
+
+          for(let i=0;i<slides.length;i++){
+            slides[i].style.display = "none";
+
+            dots[i].classList.remove("active");
+          }
+          slides[index].style.display = "block";
+          dots[index].classList.add("active");
+      }
+      </script>
+  </body>
+</html>
+
+
